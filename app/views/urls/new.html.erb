@@ -1,0 +1,5 @@
+<%= form_tag('/urls', method: 'post') do %>
+	<%= label_tag(:long_url, "Shorten this: ") %>
+	<%= text_field_tag(:long_url) %>
+	<%= submit_tag("Shorten") %>
+<% end %>
